@@ -151,7 +151,10 @@ h3 {
     letter-spacing: -0.3px;
 
     line-height: 1.2;
-
+    -webkit-user-select: none; /* لمتصفحات سفاري وكروم */
+    -moz-user-select: none;    /* لمتصفحات فايرفوكس */
+    -ms-user-select: none;     /* لمتصفحات إنترنت إكسبلورر */
+    user-select: none;
     text-align: center;
 }
 
@@ -526,4 +529,7 @@ button:active {
     *::after {
         transition: none !important;
     }
+}
+#img3{
+    display: none;
 }

@@ -10,6 +10,7 @@ let music = document.getElementById('music');
 let sound = document.getElementById('sound')
 let coin = 0;
 let tiem;
+let img3 = document.getElementById('img3')
 const programmingSnippets = [
     "const app = document.getElementById('app');",
     "function calculateSum(a, b) { return a + b; }",
@@ -95,4 +96,11 @@ btn2.onclick = function(){
 }
 music.onclick = function(){
     sound.play()
+    music.style.display = 'none';
+    img3.style.display = 'block'
+}
+img3.onclick = function(){
+    sound.pause()
+    music.style.display = 'block';
+    img3.style.display = 'none'
 }
